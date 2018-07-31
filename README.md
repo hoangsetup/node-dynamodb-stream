@@ -1,5 +1,7 @@
 # DynamoDBStream
 
+Forked from ironSource/node-dynamodb-stream
+
 A wrapper around low level aws sdk that makes it easy to consume a dynamodb-stream.
 
 ### Example: Replicating small tables
