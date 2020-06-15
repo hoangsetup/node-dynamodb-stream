@@ -1,0 +1,22 @@
+version: '3.7'
+services:
+  dynamodb-local:
+    image: amazon/dynamodb-local
+    container_name: dynamodb-local
+  app-node:
+    image: node:10.21.0-alpine
+    container_name: app-node
+    depends_on:
+      - "dynamodb-local"
+    links:
+      - "dynamodb-local"
+    volumes:
+      - .:/usr/app
+    working_dir: /usr/app
+    command:
+      npm run test:watch
+    environment:
+      - AWS_ACCESS_KEY_ID=DUMMYIDEXAMPLE
+      - AWS_SECRET_ACCESS_KEY=DUMMYEXAMPLEKEY
+      - REGION=eu-west-1
+      - ENDPOINT=http://dynamodb-local:8000

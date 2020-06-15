@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "mocha -R spec"
+    "test": "mocha -R spec",
+    "test:watch": "npm run test -- --watch"
   },
   "keywords": [
     "stream",
