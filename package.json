@@ -18,7 +18,7 @@
     "async": "^1.4.2",
     "debug": "^2.2.0",
     "dynamodb-value": "^1.0.0",
-    "lodash": "^4.17.10",
+    "lodash": "^4.17.15",
     "setimmediate": "^1.0.2"
   },
   "author": "hoangdv",
@@ -34,7 +34,7 @@
   "devDependencies": {
     "aws-sdk": "^2.1.45",
     "chai": "^3.2.0",
-    "mocha": "^5.2.0",
+    "mocha": "^8.0.1",
     "rc": "^1.1.0"
   }
 }
