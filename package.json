@@ -5,7 +5,10 @@
   "main": "index.js",
   "scripts": {
     "test": "mocha -R spec",
-    "test:watch": "npm run test -- --watch"
+    "test:watch": "npm run test -- --watch",
+    "docker:up": "docker-compose up --abort-on-container-exit",
+    "docker:test": "NPM_COMMAND=test npm run docker:up",
+    "docker:watch": "NPM_COMMAND=test:watch npm run docker:up"
   },
   "keywords": [
     "stream",

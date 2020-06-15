@@ -14,7 +14,7 @@ services:
       - .:/usr/app
     working_dir: /usr/app
     command:
-      npm run test:watch
+      npm run ${NPM_COMMAND}
     environment:
       - AWS_ACCESS_KEY_ID=DUMMYIDEXAMPLE
       - AWS_SECRET_ACCESS_KEY=DUMMYEXAMPLEKEY
